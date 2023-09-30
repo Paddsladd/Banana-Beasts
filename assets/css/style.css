@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css');
+
+* {
+  box-sizing: border-box; 
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8b8787; /* Updated background color */
+  color: #ffffff; /* Default text color */
+}
+.fade.active h2.heading,
+.fade.active div {
+  margin-top: 0;
+}
+header {
+  background-color: #9c9696;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+nav {
+  background-color: #969090;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  animation: underline 0.3s ease-in-out;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.banner {
+  text-align: center;
+  position: relative;
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+.discord-widget {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+}
+.gg-shopping-cart {
+  float: right;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs,1));
+  width: 40px;
+  height: 21px;
+  background:
+      linear-gradient(
+          to left,currentColor 12px,
+          transparent 0)
+          no-repeat -1px 6px/18px 2px,
+      linear-gradient(
+          to left,currentColor 12px,
+          transparent 0)
+          no-repeat 6px 14px/11px 2px,
+      linear-gradient(
+          to left,currentColor 12px,
+          transparent 0)
+          no-repeat 0 2px/4px 2px,
+      radial-gradient(
+          circle,currentColor 60%,
+          transparent 40%)
+          no-repeat 12px 17px/4px 4px,
+      radial-gradient(
+          circle,currentColor 60%,
+          transparent 40%)
+          no-repeat 6px 17px/4px 4px
+}
+.gg-shopping-cart::after,
+.gg-shopping-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 2px;
+  height: 14px;
+  background: currentColor;
+  top: 2px;
+  left: 4px;
+  transform: skew(12deg)
+}
+.gg-shopping-cart::after {
+  height: 10px;
+  top: 6px;
+  left: 16px;
+  transform: skew(-12deg)
+}
+
+/* Move the content of videos up */
+.moveup {
+  position: relative;
+  bottom: 473px;
+}
+/* Animation for the underline */
+@keyframes underline {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Animation for fading between tabs */
+.fade {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.fade.active {
+  opacity: 1;
+}
+.discordSocial {
+  position: relative;
+  top: 3px;
+  right: 10px;
+}
+.youtubeSocial {
+  position: relative;
+  top: 12px;
+  right: 2px;
+}
+.ticktockSocial {
+  position: relative;
+  right: 20px;
+}
+.socials {
+  position: relative;
+  right: 4px;
+  bottom: 10px;
+}
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.shopButton {
+    border-radius: 30px;
+    width: 205px;
+    height: 70px;
+    background-color: rgb(74, 170, 191);
+    border-color: rgb(255, 255, 255, 0);
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+}
+.shopButtonText {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  position: relative;
+  bottom: 22px;
+}
+.links {
+  background-color: #c3bebe;
+  height: 4rem;
+}
